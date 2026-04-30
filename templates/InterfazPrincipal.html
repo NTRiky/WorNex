@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WorNex</title>
+    <style>
+        /*Configuración general*/
+        * {
+            box-sizing: border-box; /*Controla alto y ancho de un elemento */
+            margin: 0; /*Elimina el margen exterior*/
+            padding: 0; /*Elimina el espacio interior*/
+        }
+         html {
+            scroll-behavior: smooth; /* La página se desplace suavemente en lugar de saltar de golpe.*/
+        }
+        body {
+            font-family: Verdana; /*Tipo de letra*/
+            background-color: white; /*Color de fondo de la página*/
+            color: #737373; /*Color de texto de la página*/
+        }
+        /*Barra de navegación*/
+        .navbar {
+            width: 100%; /*Barra ocupe todo el ancho de la pantalla*/
+            height: 90px; /*Altura fija de la barra*/
+            display: flex; /*Convierte la barra en un contenedor flexible*/
+            align-items: center; /*Alinea los elementos verticalmente al centro de la barra*/
+            justify-content: space-between; /*Distribuye los elementos horizontalmente*/
+            padding: 0 5%; /*Espacio interior; 0 arriba y abajo; 5% es izquierda y derecha*/
+            background-color: white; /*Fondo para la barra*/
+            border-bottom: 1px solid #e5e5e5;
+            position: sticky; /*Barra se mantenga en la parte superior*/
+            top: 0; /*Barra en el borde superior*/
+            z-index: 1000; /*Asegura que la barra esté por encima de todo el contenido*/
+        }
+        /*Menu*/
+        .menu {
+            display: flex; /*Coloca los enlaces en fila horizontal*/
+            align-items: center; /*Alinea los enlaces verticalmente al centro*/
+            gap: 30px; /*Crea una separación de 30 píxeles entre cada enlace*/
+        }
+        .menu a {
+            text-decoration: none; /*Elimina el subrayado azul*/
+            color: #333; /*Color del texto*/
+            font-size: 15px; /*Tamaño de letra*/
+            font-weight: 500; /*Grosor de la letra; 100 (muy fina) a 900 (muy gruesa)*/
+            transition: 0.3s; /*Cualquier cambio de forma gradual*/
+        }
+        .menu a:hover {
+            color: #298bf9; /*Con mouse encima; cambia suavemente a azul brillante*/
+        }
+        .logo {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 300px;
+            height: auto;
+        }
+        .BtnNivelTecnico {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        background-color: #00BFFF;
+        color: white;
+        font-family: Aptos, sans-serif;
+        font-size: 18px;
+        font-weight: bold;
+        padding: 12px 25px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        }
+        hr { 
+            position: absolute; 
+            top: 175px; 
+            left: 0; 
+            width: 100%; 
+            border: 2px solid #00BFFF; 
+        } 
+    </style>
+</head>
+<body>
+
+    <center>
+
+        <h1>Xd</h1>
+
+        <button class="BtnNivelTecnico" onclick="window.location.href='/login'">
+            Acceso Técnico
+        </button>
+        
+        <img src="/static/LogoWNHor.png" alt="Logo" class="logo">
+        <hr>
+    </center>
+
+</body>
+</html>
